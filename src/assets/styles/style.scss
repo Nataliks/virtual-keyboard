@@ -1,0 +1,125 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #7c585f;
+}
+
+.keyboard {  
+  margin: 0 auto;
+  max-width: 830px;
+  min-height: 315px;
+  padding: 5px 0;  
+	border:1px solid #D25068;
+	background-image:linear-gradient(to bottom, #c25663, #9b3c4d);
+	border-radius:5px;	
+	box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
+  user-select: none;
+  transition: bottom 0.4s;  
+}
+
+.keyboard_hidden {
+  bottom: -100%;
+}
+
+.keyboard-keys {
+  text-align: center;
+}
+
+.keyboard-key {
+  position: relative;  
+  vertical-align: top;
+  width: 45px;
+  height: 45px;
+  margin: 3px;
+  text-shadow:-1px -1px 0 #A84155;	
+	border:1px solid #D25068;
+	background-image:linear-gradient(to bottom, #F66C7B, #D25068);
+	border-radius:5px;	
+	box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
+  color: azure;  
+  cursor: pointer;
+}
+
+.keyboard-key:hover{
+  background: #F66C7B;	
+	background-image:linear-gradient(top, #D25068, #F66C7B);
+}
+
+.keyboard-key:active {
+  box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset;
+	top:5px;
+}
+
+.active {
+  background: #F66C7B;	
+	background-image:linear-gradient(top, #D25068, #F66C7B);
+  box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset;
+	top:5px;
+}
+
+[data-code="ControlLeft"],
+[data-code="ControlRight"] {
+  width: 54px;
+} 
+
+[data-code="ShiftLeft"],
+[data-code="ShiftRight"] {
+  width: 105px;
+}; 
+
+[data-code="CapsLock"] {
+  width: 100px;
+};
+
+[data-code="Enter"] {
+  width: 110px;
+}; 
+
+[data-code="Backspace"] {
+  width: 110px;
+};
+
+[data-code="Tab"] {
+  width: 60px;
+}; 
+
+[data-code="Space"] {
+  width: 351px;
+} ;
+
+.keyboard-key_activatable::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  right: 5px;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.keyboard-key_active::after {
+  background-color: yellowgreen;
+  box-shadow:-1px -1px 0 #A84155;	
+}
+
+.keyboard-key-dark {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.keyboard-input {
+  display: block;
+  margin: 10px auto;
+  width: 830px;
+  min-height: 250px;
+  background-color: #f5d0d7;
+  border-radius: 5px;
+  border:1px solid #362d2f;
+}
+
+
+
+
